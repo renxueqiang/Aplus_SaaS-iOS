@@ -1,0 +1,13 @@
+//
+//  SearchDGPresenter.h
+//  PanKeTong
+//
+//  Created by 中原管家 on 2017/8/8.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchBasePresenter.h"
+
+@interface SearchDGPresenter : SearchBasePresenter
+
+@end

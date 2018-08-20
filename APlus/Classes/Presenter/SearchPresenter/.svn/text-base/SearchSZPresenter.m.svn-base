@@ -1,0 +1,25 @@
+//
+//  SearchSZPresenter.m
+//  PanKeTong
+//
+//  Created by 中原管家 on 2017/5/15.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchSZPresenter.h"
+
+@implementation SearchSZPresenter
+
+/// 设置搜索房号导航栏
+- (void)setSearchNumberNav
+{
+    [self.selfView getSearchNumberNav];
+}
+
+/// 是否有查找房号功能
+- (BOOL)haveSearchHouseNumFunction
+{
+    return YES;
+}
+
+@end

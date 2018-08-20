@@ -1,0 +1,13 @@
+//
+//  SearchAMPresenter.h
+//  PanKeTong
+//
+//  Created by 中原管家 on 2017/5/15.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchBasePresenter.h"
+
+@interface SearchAMPresenter : SearchBasePresenter
+
+@end

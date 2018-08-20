@@ -1,0 +1,25 @@
+//
+//  SearchWHPresenter.m
+//  PanKeTong
+//
+//  Created by 乔书超 on 2017/9/28.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchWHPresenter.h"
+
+@implementation SearchWHPresenter
+
+/// 设置搜索房号导航栏
+- (void)setSearchNumberNav
+{
+    [self.selfView getSearchNumberNav];
+}
+
+/// 是否有查找房号功能
+- (BOOL)haveSearchHouseNumFunction
+{
+    return YES;
+}
+
+@end

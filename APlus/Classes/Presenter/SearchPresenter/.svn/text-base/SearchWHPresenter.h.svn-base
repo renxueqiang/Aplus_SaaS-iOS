@@ -1,0 +1,13 @@
+//
+//  SearchWHPresenter.h
+//  PanKeTong
+//
+//  Created by 乔书超 on 2017/9/28.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchBasePresenter.h"
+
+@interface SearchWHPresenter : SearchBasePresenter
+
+@end

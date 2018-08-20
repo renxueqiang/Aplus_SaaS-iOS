@@ -1,0 +1,25 @@
+//
+//  SearchHZPresenter.m
+//  PanKeTong
+//
+//  Created by 乔书超 on 2017/9/6.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchHZPresenter.h"
+
+@implementation SearchHZPresenter
+
+/// 设置搜索房号导航栏
+- (void)setSearchNumberNav
+{
+    [self.selfView getSearchNumberNav];
+}
+
+/// 是否有查找房号功能
+- (BOOL)haveSearchHouseNumFunction
+{
+    return YES;
+}
+
+@end

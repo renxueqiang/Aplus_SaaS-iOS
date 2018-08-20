@@ -1,0 +1,38 @@
+//
+//  SearchBJPresenter.m
+//  PanKeTong
+//
+//  Created by 中原管家 on 2017/5/15.
+//  Copyright © 2017年 中原集团. All rights reserved.
+//
+
+#import "SearchBJPresenter.h"
+#import "AppDelegate.h"
+
+@implementation SearchBJPresenter
+
+/// 设置搜索房号导航栏
+- (void)setSearchNumberNav
+{
+    [self.selfView getSearchNumberNav];
+}
+
+/// 是否有查找房号功能
+- (BOOL)haveSearchHouseNumFunction
+{
+    // APPSetting开关
+    NSNumber *virtualCallSwitch = [CommonMethod getUserdefaultWithKey:VirtualCallSwitch];
+    int virtualCall = [virtualCallSwitch intValue];
+    // 部门虚拟号开关
+    NSNumber *switchNum = [CommonMethod getUserdefaultWithKey:DeptVirtualSwitch];
+    int deptVirtual = [switchNum intValue];
+
+    if (virtualCall == 1 && deptVirtual == 1)
+    {
+        return YES;
+    }
+    return NO;
+}
+
+
+@end

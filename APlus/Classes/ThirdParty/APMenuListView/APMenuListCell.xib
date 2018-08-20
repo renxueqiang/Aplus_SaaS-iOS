@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="4352" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="APMenuListCell">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="37.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvT-Tb-AoZ">
+                        <rect key="frame" x="41" y="11.5" width="90" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="fgY-Cq-20m"/>
+                            <constraint firstAttribute="width" constant="90" id="rTe-a6-3JA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estate_news" translatesAutoresizingMaskIntoConstraints="NO" id="r3D-G3-WHl">
+                        <rect key="frame" x="15" y="11" width="16" height="16"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fsk-K7-AuB">
+                        <rect key="frame" x="42" y="36.5" width="98" height="1"/>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.90588235289999997" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="98" id="VNS-kc-R9h"/>
+                            <constraint firstAttribute="height" constant="1" id="YgP-Gj-tOs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fsk-K7-AuB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="0iZ-Lz-76U"/>
+                    <constraint firstAttribute="bottom" secondItem="fsk-K7-AuB" secondAttribute="bottom" id="5Ig-ll-rkB"/>
+                    <constraint firstItem="r3D-G3-WHl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AAh-b8-3jh"/>
+                    <constraint firstItem="TvT-Tb-AoZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dxh-da-HQJ"/>
+                    <constraint firstItem="TvT-Tb-AoZ" firstAttribute="leading" secondItem="r3D-G3-WHl" secondAttribute="trailing" constant="10" id="Msi-C8-sod"/>
+                    <constraint firstItem="r3D-G3-WHl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Psr-FB-Xuc"/>
+                    <constraint firstItem="TvT-Tb-AoZ" firstAttribute="leading" secondItem="r3D-G3-WHl" secondAttribute="trailing" constant="10" id="eS3-pD-xUW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="iconImageView" destination="r3D-G3-WHl" id="RFS-ka-z5T"/>
+                <outlet property="seperateLineView" destination="fsk-K7-AuB" id="y1r-dD-D5j"/>
+                <outlet property="titleLabel" destination="TvT-Tb-AoZ" id="CQA-B8-T1d"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="estate_news" width="16" height="16"/>
+    </resources>
+</document>

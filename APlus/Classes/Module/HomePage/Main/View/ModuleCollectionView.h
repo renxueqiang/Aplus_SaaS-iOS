@@ -1,0 +1,16 @@
+//
+//  ModuleCollectionView.h
+//  APlus
+//
+//  Created by 李慧娟 on 2017/10/13.
+//  Copyright © 2017年 CentaLine. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+/// 模块视图
+@interface ModuleCollectionView : UICollectionView <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, strong) NSArray *dataArr;
+
+@end
